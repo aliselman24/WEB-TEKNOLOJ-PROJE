@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<!-- Responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!-- Ikon Kutuphanesi -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap" rel="stylesheet">
+	
+	<!-- Css -->
+	<link rel="stylesheet" href="style.css">
+
+	<!--------------------------------->
+	<title>Web Teknoloji Projesi</title>
+
+</head>
+
+<body>
+
+
+	<body>
+
+
+        <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+            <div class="container">
+                <a href="anasayfa.html" class="navbar-brand">
+                    ALİ SELMAN ERKAN
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbarCollapse" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="anasayfa.html" class="nav-link">ANASAYFA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ozgecmis.html" class="nav-link">ÖZGEÇMİŞ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">İLGİLERİM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sehrim.html" class="nav-link">ŞEHRİM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">MİRASIMIZ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="iletisim.html" class="nav-link">İLETİŞİM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link"><i class="fas fa-sign-in-alt"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+    <header>
+        <div class="jumbotron text-center">
+            <div class="container">
+                <h1 class="display-4 font-italic"> GÖZDE ŞEHİR KOCAELİ </h1>
+            </div>
+        </div>
+    </header>
+
+	<main>
+
+		<div class="container">
+			
+			<div class="row">
+
+				<br>
+				
+				<div id="slider1" class="carousel slide carousel-fade my-5">
+					<ol class="carousel-indicators">
+						<li data-target="#slider1" data-slide-to="0" class="active"></li>
+						<li data-target="#slider1" data-slide-to="1"></li>
+						<li data-target="#slider1" data-slide-to="2"></li>
+						<li data-target="#slider1" data-slide-to="3"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<a href="karaca.html">
+							<img class="d-block w-100" src="img/yalovam_karaca.jpg" alt="">
+							</a>
+							<div class="carousel-caption d-none d-md-block">
+								<h5>Karaca Arboretumu</h5>
+								<p></p>
+							</div>
+						</div>
+
+
+						
+
+					</div>
+					<a href="#slider1" class="carousel-control-prev" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+					<a href="#slider1" class="carousel-control-next" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+				</div>
+
+
+				
+
+			</div>
+
+		</div>
+
+	</main>
+
+
+	<footer class="py-5 bg-dark text-white text-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-left">
+                    WEB Teknoloji ALİ SELMAN ERKAN  <span id="datetime"></span>
+                </div>
+                <div class="col-md-6 text-right">
+                    <img src="" alt="Resim Açıklaması">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+	<!-- BOOTSTRAP -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script>
+        function updateDateTime() {
+            var today = new Date();
+            var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+            var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+            var dateTime = date+' '+time;
+            document.getElementById("datetime").innerHTML = ' ' + dateTime;
+        }
+    
+        updateDateTime(); // Sayfa yüklendiğinde tarihi ve saati güncelle
+    
+        setInterval(updateDateTime, 1000); // Her saniyede bir tarihi ve saati güncelle
+    </script>
+</body>
+
+</html>
