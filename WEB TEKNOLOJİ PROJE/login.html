@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script>
+        function validate() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Doğru kullanıcı adı ve şifre kontrolü
+            if (username === "b231210103" && password === "selman2005") {
+                // Doğruysa yönlendirme
+                window.location.href = "anasayfa.html";
+            } else {
+                // Yanlışsa hata mesajı
+                alert("Yanlış kullanıcı adı veya şifre.");
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("password").addEventListener("keydown", function(event) {
+                if (event.key === "Enter") {
+                    validate();
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2>Login</h2>
+    <form>
+        <div>
+            <label for="username">Öğrenci No:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+            <label for="password">Şifre:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <button type="button" onclick="validate()">Giriş</button>
+    </form>
+</body>
+</html>
