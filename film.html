@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Detayları</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: chocolate;
+            background-image: url('arkaplan-resmi.jpg'); /* Arka plan resmi buraya */
+            background-size: cover;
+            background-position: center;
+            color: #fff; /* Yazı rengi beyaz olarak ayarlandı, arka plana göre değiştirilebilir */
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Geçirgen siyah arka plan */
+            border-radius: 10px;
+            text-align: center; /* Ortalamak için */
+        }
+        h1, p {
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img id="film-afisi" src="" alt="Film Afişi">
+    <h1 id="film-basligi">Film Başlığı</h1>
+    <p id="film-aciklamasi">Film Açıklaması</p>
+    <p id="film-tarihi">Çıkış Tarihi</p>
+</div>
+
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const filmId = urlParams.get('id');
+
+    fetch(`https://api.themoviedb.org/3/movie/${filmId}?api_key=17cc829242682502a16ed5b0ae743b1b&language=tr-TR`)
+        .then(response => response.json())
+        .then(film => {
+            document.getElementById('film-basligi').textContent = film.title;
+            document.getElementById('film-aciklamasi').textContent = film.overview;
+            document.getElementById('film-tarihi').textContent = `Çıkış Tarihi: ${film.release_date}`;
+            document.getElementById('film-afisi').src = `https://image.tmdb.org/t/p/w500${film.poster_path}`;
+            document.getElementById('film-afisi').alt = `${film.title} Afişi`;
+        })
+        .catch(error => console.error('API Hatası:', error));
+</script>
+
+</body>
+</html>
