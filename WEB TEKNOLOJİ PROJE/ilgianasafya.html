@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Listesi</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            
+            background-image: url('film.webp'); /* Arka plan resmi buraya */
+            background-size: cover;
+            background-position: center;
+            color: #fff; /* Yazı rengi beyaz olarak ayarlandı, arka plana göre değiştirilebilir */
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Geçirgen siyah arka plan */
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .film-listesi {
+            list-style: none;
+            padding: 0;
+        }
+        .film-listesi li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.1); /* Geçirgen beyaz arka plan */
+            border-radius: 5px;
+            cursor: pointer; /* Fark edilir şekilde fare imleci değişikliği */
+        }
+        .film-listesi li:hover {
+            background-color: rgba(255, 255, 255, 0.3); /* Hafif belirginleştirme efekti */
+        }
+        .navbar-brand {
+            font-weight: bold;
+        }
+        .navbar-nav .nav-item .nav-link {
+            color: #fff !important;
+        }
+        .navbar-nav .nav-item .nav-link:hover {
+            color: #ddd !important;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md fixed-top bg-info">
+    <div class="container">
+        <a href="index.html" class="navbar-brand text-white">Ali Selman Erkan</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"><i class="fas fa-ellipsis-v"></i></span>
+        </button>
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">ANASAYFA</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ozgecmis.html" class="nav-link">ÖZGEÇMİŞ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ilgianasafya.html" class="nav-link">İLGİLERİM</a>
+                </li>
+                <li class="nav-item">
+                    <a href="sehrim.html" class="nav-link">ŞEHRİM</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">MİRASIMIZ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="iletişim.html" class="nav-link">İLETİŞİM</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link"><i class="fas fa-sign-in-alt"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container mt-5 pt-5">
+    <br><br>
+    <h1>Film Listesi</h1>
+    <ul class="film-listesi" id="film-listesi">
+        <!-- API ile gelecek film bilgileri buraya eklenecek -->
+    </ul>
+</div>
+
+<script>
+    fetch('https://api.themoviedb.org/3/discover/movie?api_key=17cc829242682502a16ed5b0ae743b1b&language=tr-TR&sort_by=vote_count.desc&page=1')
+        .then(response => response.json())
+        .then(data => {
+            const filmListesi = document.getElementById('film-listesi');
+            data.results.forEach((film, index) => {
+                const li = document.createElement('li');
+                li.textContent = film.title;
+                li.addEventListener('click', () => {
+                    window.location.href = `film.html?id=${film.id}`;
+                });
+                filmListesi.appendChild(li);
+            });
+        })
+        .catch(error => console.error('API Hatası:', error));
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

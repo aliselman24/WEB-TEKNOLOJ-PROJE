@@ -1,45 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <script>
-        function validate() {
-            var username = document.getElementById("username").value;
-            var password = document.getElementById("password").value;
-
-            // Doğru kullanıcı adı ve şifre kontrolü
-            if (username === "b231210103" && password === "selman2005") {
-                // Doğruysa yönlendirme
-                window.location.href = "anasayfa.html";
-            } else {
-                // Yanlışsa hata mesajı
-                alert("Yanlış kullanıcı adı veya şifre.");
-            }
+    <title>Giriş Yap</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('login.jpg'); /* Arka plan resmi buraya */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff; /* Yazı rengi beyaz olarak ayarlandı, arka plana göre değiştirilebilir */
         }
-
-        document.addEventListener("DOMContentLoaded", function() {
-            document.getElementById("password").addEventListener("keydown", function(event) {
-                if (event.key === "Enter") {
-                    validate();
-                }
-            });
-        });
-    </script>
+        .container {
+            background-color: #000; /* Tamamen siyah arka plan */
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            color: #fff; /* Yazı rengi beyaz */
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        .input-group label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            box-sizing: border-box;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1em;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .error {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h2>Login</h2>
-    <form>
-        <div>
-            <label for="username">Öğrenci No:</label>
+
+<div class="container">
+    <h1>Hoşgeldiniz</h1>
+    <form id="loginForm">
+        <div class="input-group">
+            <label for="username">Okul Numarası</label>
             <input type="text" id="username" name="username" required>
         </div>
-        <div>
-            <label for="password">Şifre:</label>
+        <div class="input-group">
+            <label for="password">Şifre</label>
             <input type="password" id="password" name="password" required>
         </div>
-        <button type="button" onclick="validate()">Giriş</button>
+        <button type="submit" class="btn">Giriş Yap</button>
+        <p id="error" class="error"></p>
     </form>
+</div>
+
+<script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        const errorElement = document.getElementById('error');
+
+        if (username === 'b231210103' && password === 'Selman2005-') {
+            alert('Giriş Başarılı! Hoşgeldiniz.');
+            window.location.href = 'index.html';
+        } else {
+            errorElement.textContent = 'Okul numarası veya şifre hatalı!';
+        }
+    });
+</script>
+
 </body>
 </html>
