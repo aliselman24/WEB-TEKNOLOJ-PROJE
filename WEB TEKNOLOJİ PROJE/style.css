@@ -1,0 +1,82 @@
+/* CSS Stil Kodları */
+.navbar {
+	opacity: 0.8;
+	border-bottom: 1px solid #fff;
+}
+
+.nav-item:hover {
+	color: blue;
+}
+
+.jumbotron {
+	padding-top: 100px;
+}
+
+.fa-ellipsis-v {
+	color: #fff;
+}
+
+.container.a {
+	color: #fff;
+}
+
+main {
+	font-family: 'Open Sans', sans-serif;
+}
+
+main img {
+	width: 100%;
+	height: auto;	
+}
+
+main p i {
+	font-size: 0.8rem;
+}
+
+.card img {
+	height: 30rem;
+	width: auto;
+}
+
+
+    .film-listesi {
+        list-style: none;
+        padding: 0;
+    }
+    .film-listesi li {
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.1); /* Geçirgen beyaz arka plan */
+        border-radius: 5px;
+        cursor: pointer; /* Fark edilir şekilde fare imleci değişikliği */
+    }
+    .film-listesi li:hover {
+        background-color: rgba(255, 255, 255, 0.3); /* Hafif belirginleştirme efekti */
+    }
+    .navbar {
+        background-color: black;
+    }
+
+    .navbar .navbar-brand,
+    .navbar .navbar-nav .nav-link {
+        color: white;
+    }
+
+    /* Header */
+    header {
+        background-color: black;
+    }
+
+    .jumbotron {
+        background-color: black;
+        color: white;
+    }
+
+
+
+
+
+
+
+
+

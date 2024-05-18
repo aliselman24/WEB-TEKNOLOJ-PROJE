@@ -6,6 +6,7 @@
     <title>Film Listesi</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -27,20 +28,7 @@
         h1 {
             text-align: center;
         }
-        .film-listesi {
-            list-style: none;
-            padding: 0;
-        }
-        .film-listesi li {
-            margin-bottom: 10px;
-            padding: 10px;
-            background-color: rgba(255, 255, 255, 0.1); /* Geçirgen beyaz arka plan */
-            border-radius: 5px;
-            cursor: pointer; /* Fark edilir şekilde fare imleci değişikliği */
-        }
-        .film-listesi li:hover {
-            background-color: rgba(255, 255, 255, 0.3); /* Hafif belirginleştirme efekti */
-        }
+
         .navbar-brand {
             font-weight: bold;
         }
@@ -89,7 +77,7 @@
 </nav>
 
 
-<div class="container mt-5 pt-5">
+<div class="container mt-5 pt-5" id = "filmListesi">
     <br><br>
     <h1>Film Listesi</h1>
     <ul class="film-listesi" id="film-listesi">
