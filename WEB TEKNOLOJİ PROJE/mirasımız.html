@@ -7,7 +7,41 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <style>
+        
+    
+        /* Galeri CSS */
+        .gallery {
+            width: 600px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: none;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 10px 15px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            z-index: 1;
+        }
+        .prev {
+            left: 0;
+        }
+        .next {
+            right: 0;
+        }
+    
         /* CSS Stil Kodları */
         body {
             font-family: 'Open Sans', sans-serif;
@@ -17,10 +51,27 @@
             padding: 0;
         }
 
+        .navbar {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
         }
 
         h1 {
@@ -33,7 +84,6 @@
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            margin-bottom: 30px;
             overflow: hidden;
         }
 
@@ -55,21 +105,46 @@
         .card-content p {
             line-height: 1.6;
         }
-
-        @media (min-width: 768px) {
-            .container {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                gap: 20px;
-            }
-        }
     </style>
 </head>
 <body>
 
+<div class="navbar">
+    <li class="nav-item">
+        <a href="index.html" class="nav-link active text-white">ANASAYFA</a>
+    </li>
+    
+    <li class="nav-item">
+        <a href="ozgecmis.html" class="nav-link active text-white">ÖZGEÇMİŞ</a>
+    </li>
+    
+    <li class="nav-item">
+        <a href="ilgianasafya.html" class="nav-link active text-white">İLGİLERİM</a>
+    </li>
+    
+    <li class="nav-item">
+        <a href="sehrim.html" class="nav-link active text-white">ŞEHRİM</a>
+    </li>
+    
+    <li class="nav-item">
+        <a href="" class="nav-link active text-white">MİRASIMIZ</a>
+    </li>
+    
+    <li class="nav-item">
+        <a href="iletişim.html" class="nav-link active text-white">İLETİŞİM</a>
+    </li>
+    
+    <li class="nav-item">
+        <a href="login.html" class="nav-link active text-white"><i class="fas fa-sign-in-alt"></i></a>
+    </li>
+           
+</div>
+<h1>Kocaeli'nin Tarihi Yerleri</h1>
+    
+
 <div class="container">
     <div class="card">
-        <img src="https://via.placeholder.com/600x400" alt="Görsel 1">
+        <img src="osman hamdi bey.jpg" alt="Görsel 1">
         <div class="card-content">
             <h2>Osman Hamdi Bey Müzesi</h2>
             <p>Osman Hamdi Bey Müzesi, Osmanlı dönemi ressamı ve arkeolog Osman Hamdi Bey'in adını taşıyan bir müzedir. Müzede, Osman Hamdi Bey'in eserleri ve Osmanlı dönemine ait arkeolojik buluntular sergilenmektedir.</p>
@@ -77,7 +152,7 @@
     </div>
 
     <div class="card">
-        <img src="https://via.placeholder.com/600x400" alt="Görsel 2">
+        <img src="ORHAN.jpeg" alt="Görsel 2">
         <div class="card-content">
             <h2>Orhan Camii</h2>
             <p>1332 yılında Nikomedya'nın fethini tamamlamaya muvaffak olan Şehzade Gazi Süleyman Paşa tarafından babası Orhan Gazi adına yaptırılan camii, İzmit'in fetih camiidir. Osmanlı Devleti'nin fetih geleneğine göre ilk yapılan fetih camiinde hutbeye kılıçla çıkılırdı. Günümüzde de Osmanlı Devleti'nden kalan bu gelenek biraz farkla sürdürülmekle birlikte Orhan Camii'nde cuma hutbelerine kılıçla çıkılmaktadır.</p>
@@ -98,7 +173,70 @@
             <h2>Saat Kulesi </h2>
             <p>İzmit, Kemalpaşa Mahallesi'nde Kasr-ı Hümayun (Saray Müze) ile Atatürk Heykeli arasında yer alan, kentin karekteristik Saat Kulesi'dir. İzmit Mutasarrıfı Musa Kazım Bey tarafından, Sultan II.Abdülhamit’in tahta çıkışının 25. yıldönümü nedeniyle 1902 yılında Neoklasik üslupta Hereke ve Tavşancıldan getirilen traverten taşlardan yaptırılmıştır.</p>
         </div>
+
+        
     </div>
+
+    <div class="card">
+        <img src="anıt.jpeg" alt="Görsel 4">
+        <div class="card-content">
+            <h2>Akçakoca Anıt Mezarı </h2>
+            <p>İzmit-Üsküdar arasındaki bölgeye de akınlarda bulunan Akçakoca, İzmit’in fethinden önce, 1328 yılında Kandıra yakınlarındaki bir tepede vefat etmiş, eski Türk adetleri gereğince vefat ettiği yere defnedilmiştir. Fetihlerde bulunduğu İzmit ve çevresine, “Akçakoca Bey’in yurdu-toprakları” manasında “Koca-ili’” denilmiştir. Kandıra bölgesinin en yüksek tepesi olan Babadağ’da yer alan anıt mezar Türk Otağı görünümlüdür. 400 metre rakımlı tepeden ormanın yeşili ve denizin mavisine hakim panoramik manzarasını ve gün batımını izlemeden dönülmemeli.</p>
+        </div>
+
+        
+    </div>
+
+    <div class="card">
+        <img src="korşd.jpg" alt="Görsel 4">
+        <div class="card-content">
+            <h2>İZMİT TARİH KORİDORU </h2>
+            <p>Yokuştaki Kocaeli Basın Müzesi, bir devre ışık tutan gazete kupürleri ve basın ekipmanlarıyla misafirlerini bekliyor. Müzenin bitişiğindeki “İzmit Tarihi Çarşı” ise içerisindeki, kolonyacı, tatlıcı, aksesuarcı, mobilya restoratörü, çini ürünleri, el sanatları, kahveci ve hediyelik eşya dükkanlarıyla, İzmit’te görülmesi gereken yerlerin başında geliyor.</p>
+        </div>
+
+        
+    </div>
+
+    <div class="card">
+        <img src="tarihi-ve-kulturel-miras-5b6765a5aeeffd92c95b.jpg" alt="Görsel 4">
+        <div class="card-content">
+            <h2>DEMİRCİLER KONAĞI </h2>
+            <p>Dilovası Demirciler köyünde bulunan konak, 19. yüzyıl Osmanlı Mimarisinin en başarılı örneğidir. İçindeki kalem işi bezemeler ve mimari üslup açısından Kocaeli’deki tek örnek olma özelliğine sahiptir.
+
+            </p>
+        </div>
+
+        
+    </div>
+
+    <div class="card">
+        <img src="gültepe.jpg" alt="Görsel 4">
+        <div class="card-content">
+            <h2>GÜLTEPE NEKROPOLÜ</h2>
+            <p>Nekropol, eski Yunanca’da “mezarlar şehri” anlamına gelir. Antik Çağ Nekropolü ile Bizans Dönemi’ne ait “kutsal yapı” kalıntısı hipoje (yeraltı mezarları) yol çalışmaları sırasında tesadüfen bulunmuştur. Bölgede ayrıca Roma Dönemi’ne ait Kiremit Mezar olarak adlandırılan, yakılan ve kaynatılan cesetlerin kemiklerinin konulduğu üçgen şeklinde pişmiş topraktan imal edilmiş “kemiklikler” de bulunuyor. Daha üst kısımlarda ise ikinci ve üçüncü yüzyıllara ait Roma Dönemi lahitlerine rastlanıyor.</p>
+        </div>
+
+        
+    </div>
+
+    <div class="card">
+        <img src="hereke.jpeg" alt="Görsel 4">
+        <div class="card-content">
+            <h2>HEREKE KALESİ</h2>
+            <p>Kalenin 1326’daki fethi İzmit bölgesinin fetihlerinin tamamlayıcısı olur ve Osmanlı beyliğinebağlanır. Ancak bölgede Sultan II. Bayezid döneminde büyük bir deprem yaşanır. Depremde Hereke Kalesi tamamen ortadan kalkar. Felaketin ardından Hereke halkı uzun süre kendini toparlayamaz ve nam saldıkları dokumacılıkta da bir süre durağanlık yaşanır.</p>
+        </div>
+
+        
+    </div>
+
+    
+    
+    
+
+    
+
+
+
 </div>
 
 </body>
