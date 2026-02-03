@@ -8,39 +8,51 @@
 ## 📌 Proje Hakkında (About)
 Bu proje, **Sakarya Üniversitesi Bilgisayar Mühendisliği** Bölümü "Web Teknolojileri" dersi kapsamında geliştirilmiş kapsamlı bir kişisel web sitesidir. 
 
-Proje, sadece kişisel bilgileri (CV) sunmakla kalmaz, aynı zamanda yaşadığım şehrin (Kocaeli) tarihi ve kültürel miraslarını tanıtan bir rehber niteliği taşır. Responsive (duyarlı) tasarım prensiplerine uygun olarak HTML, CSS ve PHP kullanılarak geliştirilmiştir.
+Kocaeli şehrinin (Hereke, Gültepe vb.) tarihi ve kültürel miraslarını tanıtan, aynı zamanda kişisel CV ve ilgi alanlarını barındıran responsive bir web uygulamasıdır.
 
-## ✨ Özellikler (Features)
+## ✨ Özellikler ve Ekran Görüntüleri
 
-Sitede bulunan ana modüller ve sayfalar şunlardır:
+### 1. Giriş ve Profil (Login & Profile)
+Kullanıcı giriş ekranı ve kişisel tanıtım sayfası.
 
-* 🏠 **Anasayfa:** Modern ve kullanıcı dostu bir karşılama ekranı.
-* 🌆 **Şehrim (My City):** Kocaeli'nin tarihi, kültürü ve gezilecek yerlerinin tanıtımı (Hereke, İzmit Saat Kulesi vb.).
-* 📜 **Tarihi Mirasımız (Heritage):** Bölgenin kültürel ve tarihi dokusunu anlatan detaylı içerikler.
-* 👨‍💻 **Özgeçmiş (CV):** Eğitim, yetenekler ve deneyimlerin listelendiği profesyonel profil sayfası.
-* ⚽ **İlgi Alanlarım (Interests):** Hobiler, sevilen filmler ve kişisel ilgi alanları (API entegrasyonu demosu içerir).
-* 🔐 **Giriş Yap (Login):** Kullanıcı doğrulama simülasyonu yapan bir giriş paneli.
-* 📬 **İletişim (Contact):** Ziyaretçilerin mesaj gönderebileceği **PHP tabanlı** çalışan bir iletişim formu.
+| Giriş Paneli (Login) | Profil Sayfası |
+| :---: | :---: |
+| <img src="./WEB%20TEKNOLOJİ%20PROJE/login.jpg" width="400"> | <img src="./WEB%20TEKNOLOJİ%20PROJE/profil.jpg" width="400"> |
 
-## 🛠️ Kullanılan Teknolojiler (Tech Stack)
+### 2. Şehrim Kocaeli (City Guide)
+Şehrin tarihi dokusu ve gezilecek yerleri.
 
-* **Frontend:** HTML5, CSS3 (Custom Styling, Responsive Design)
-* **Backend:** PHP (Form handling & validation)
-* **Tools:** Visual Studio Code, XAMPP/WAMP Server
+| İzmit | Hereke |
+| :---: | :---: |
+| <img src="./WEB%20TEKNOLOJİ%20PROJE/izmit%20ihl.jpeg" width="400"> | <img src="./WEB%20TEKNOLOJİ%20PROJE/hereke.jpeg" width="400"> |
 
-## 🚀 Kurulum ve Çalıştırma (Installation)
+### 3. Mirasımız ve Kültür (Heritage)
+Bölgenin önemli simgeleri.
 
-Bu proje PHP dosyaları (`contact.php`) içerdiği için bir yerel sunucuya ihtiyaç duyar.
-
-1.  Bu repoyu bilgisayarınıza indirin (ZIP veya Git ile).
-2.  **XAMPP** veya **WAMP** gibi bir yerel sunucu kurun.
-3.  Proje klasörünü `htdocs` (XAMPP için) veya `www` (WAMP için) klasörünün içine atın.
-4.  Tarayıcınızı açın ve şu adrese gidin:
-    ```
-    http://localhost/web-teknoloj-proje/WEB TEKNOLOJİ PROJE/index.html
-    ```
-
-
+| Tarihi Miras | Gültepe |
+| :---: | :---: |
+| <img src="./WEB%20TEKNOLOJİ%20PROJE/tarihi-ve-kulturel-miras-5b6765a5aeeffd92c95b.jpg" width="400"> | <img src="./WEB%20TEKNOLOJİ%20PROJE/gültepe.jpg" width="400"> |
 
 ---
-*Developed by Ali Selman Erkan - Computer Engineering Student at Sakarya University (SAÜ)*
+
+## 🛠️ Teknik Detaylar
+
+* **Frontend:** HTML5, CSS3
+* **Backend:** PHP (İletişim formu ve form işleme)
+* **Sayfa Yapısı:**
+    * `index.html` - Anasayfa
+    * `sehrim.html` - Şehir Tanıtımı
+    * `mirasımız.html` - Kültürel Miras
+    * `ozgecmis.html` - Kişisel CV
+    * `login.html` - Giriş Ekranı
+
+## 🚀 Nasıl Çalıştırılır?
+
+Bu proje PHP içerdiği için (iletişim formu vb.) bir sunucuda çalıştırılmalıdır.
+
+1.  Repoyu indirin.
+2.  Dosyaları `XAMPP/htdocs` veya `WAMP/www` klasörüne atın.
+3.  Tarayıcıda: `http://localhost/WEB%20TEKNOLOJİ%20PROJE/index.html` adresine gidin.
+
+---
+*Developed by Ali Selman Erkan*
