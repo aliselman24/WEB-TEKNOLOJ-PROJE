@@ -17,21 +17,21 @@ Kullanıcı giriş ekranı ve kişisel tanıtım sayfası.
 
 | Giriş Paneli (Login) | Profil Sayfası |
 | :---: | :---: |
-| <img src="./WEB%20TEKNOLOJİ%20PROJE/login.jpg" width="400"> | <img src="./WEB%20TEKNOLOJİ%20PROJE/profil.jpg" width="400"> |
+| <img src="WEB%20TEKNOLOJ%C4%B0%20PROJE/login.jpg" width="400"> | <img src="WEB%20TEKNOLOJ%C4%B0%20PROJE/profil.jpg" width="400"> |
 
 ### 2. Şehrim Kocaeli (City Guide)
 Şehrin tarihi dokusu ve gezilecek yerleri.
 
 | İzmit | Hereke |
 | :---: | :---: |
-| <img src="./WEB%20TEKNOLOJİ%20PROJE/izmit%20ihl.jpeg" width="400"> | <img src="./WEB%20TEKNOLOJİ%20PROJE/hereke.jpeg" width="400"> |
+| <img src="WEB%20TEKNOLOJ%C4%B0%20PROJE/izmit%20ihl.jpeg" width="400"> | <img src="WEB%20TEKNOLOJ%C4%B0%20PROJE/hereke.jpeg" width="400"> |
 
 ### 3. Mirasımız ve Kültür (Heritage)
 Bölgenin önemli simgeleri.
 
 | Tarihi Miras | Gültepe |
 | :---: | :---: |
-| <img src="./WEB%20TEKNOLOJİ%20PROJE/tarihi-ve-kulturel-miras-5b6765a5aeeffd92c95b.jpg" width="400"> | <img src="./WEB%20TEKNOLOJİ%20PROJE/gültepe.jpg" width="400"> |
+| <img src="WEB%20TEKNOLOJ%C4%B0%20PROJE/tarihi-ve-kulturel-miras-5b6765a5aeeffd92c95b.jpg" width="400"> | <img src="WEB%20TEKNOLOJ%C4%B0%20PROJE/gültepe.jpg" width="400"> |
 
 ---
 
@@ -52,7 +52,7 @@ Bu proje PHP içerdiği için (iletişim formu vb.) bir sunucuda çalıştırıl
 
 1.  Repoyu indirin.
 2.  Dosyaları `XAMPP/htdocs` veya `WAMP/www` klasörüne atın.
-3.  Tarayıcıda: `http://localhost/WEB%20TEKNOLOJİ%20PROJE/index.html` adresine gidin.
+3.  Tarayıcıda: `http://localhost/WEB%20TEKNOLOJ%C4%B0%20PROJE/index.html` adresine gidin.
 
 ---
 *Developed by Ali Selman Erkan*
