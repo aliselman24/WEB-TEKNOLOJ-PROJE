@@ -20,7 +20,7 @@ Sitede bulunan ana modüller ve sayfalar şunlardır:
 * 👨‍💻 **Özgeçmiş (CV):** Eğitim, yetenekler ve deneyimlerin listelendiği profesyonel profil sayfası.
 * ⚽ **İlgi Alanlarım (Interests):** Hobiler, sevilen filmler ve kişisel ilgi alanları (API entegrasyonu demosu içerir).
 * 🔐 **Giriş Yap (Login):** Kullanıcı doğrulama simülasyonu yapan bir giriş paneli.
-* b **İletişim (Contact):** Ziyaretçilerin mesaj gönderebileceği **PHP tabanlı** çalışan bir iletişim formu.
+* 📬 **İletişim (Contact):** Ziyaretçilerin mesaj gönderebileceği **PHP tabanlı** çalışan bir iletişim formu.
 
 ## 🛠️ Kullanılan Teknolojiler (Tech Stack)
 
@@ -40,15 +40,7 @@ Bu proje PHP dosyaları (`contact.php`) içerdiği için bir yerel sunucuya ihti
     http://localhost/web-teknoloj-proje/WEB TEKNOLOJİ PROJE/index.html
     ```
 
-## 📷 Ekran Görüntüleri (Screenshots)
 
-| Anasayfa | Şehrim Sayfası |
-| :---: | :---: |
-| *[Buraya anasayfa ekran görüntüsü ekleyin]* | *[Buraya şehrim sayfası ekran görüntüsü ekleyin]* |
-
-| Login Paneli | İletişim Formu |
-| :---: | :---: |
-| *[Buraya login.jpg gibi bir görsel ekleyin]* | *[Buraya iletişim sayfası görseli ekleyin]* |
 
 ---
 *Developed by Ali Selman Erkan - Computer Engineering Student at Sakarya University (SAÜ)*
