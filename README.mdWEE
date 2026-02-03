@@ -5,18 +5,18 @@ Kullanıcı giriş ekranı ve kişisel tanıtım sayfası.
 
 | Giriş Paneli (Login) | Profil Sayfası |
 | :---: | :---: |
-| <img src="web-teknoloji-proje/login.jpg" width="400"> | <img src="web-teknoloji-proje/profil.jpg" width="400"> |
+| <img src="./login.jpg" width="400"> | <img src="./profil.jpg" width="400"> |
 
 ### 2. Şehrim Kocaeli (City Guide)
 Şehrin tarihi dokusu ve gezilecek yerleri.
 
 | İzmit | Hereke |
 | :---: | :---: |
-| <img src="web-teknoloji-proje/izmit-ihl.jpeg" width="400"> | <img src="web-teknoloji-proje/hereke.jpeg" width="400"> |
+| <img src="./images.jpeg" width="400"> | <img src="./film.webp" width="400"> |
 
 ### 3. Mirasımız ve Kültür (Heritage)
 Bölgenin önemli simgeleri.
 
-| Tarihi Miras | Gültepe |
+| Tarihi Miras | Diğer Görsel |
 | :---: | :---: |
-| <img src="web-teknoloji-proje/tarihi-ve-kulturel-miras.jpg" width="400"> | <img src="web-teknoloji-proje/gultepe.jpg" width="400"> |
+| <img src="./image.jpg" width="400"> | <img src="./images.jpeg" width="400"> |
