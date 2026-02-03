@@ -1,6 +1,57 @@
-WEB PROJESİ ÖDEVİNİ COMMİT YAPMAYA "WEB TEKNOLOJİ PROJE" DOSYASI İLE BAŞLADIM 
-SONRASINDA HATALARDAN DOLAYI " web " DOSYASINI YÜKLEDİM .
-EN SONDA İSİM DÜZELTMESİ VE DÜZENLİ OLMASI İÇİN "WEB TEKNOLOJİLERİ PROJE" DOSYASINI YÜKLEDİM. 
-17 MAYIS 2024 TARİHİ İÇİN EN GÜNCEL OLAN "WEB TEKNOLOJİLERİ PROJE " ADLI DOSYANIN İÇERİSİNDEKİLERDİR. DİĞERLERİ YANLIŞLIKTAN DOLAYI YÜKLENMİŞTİR.
+
 19 MAYIS 2024 TARİHİ İÇİN EN GÜNCE OLAN "WEB TEKNOLOJİ PROJE" ADLI DOSYANIN İÇERİSİNDEKİLERDİR. 
-EKLEMELER YAPMAYA DEVAM EDİYORUM...
+
+# 🌍 My Personal Website & City Guide Project
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![Sakarya University](https://img.shields.io/badge/Sakarya_University-Project-green?style=for-the-badge)
+
+## 📌 Proje Hakkında (About)
+Bu proje, **Sakarya Üniversitesi Bilgisayar Mühendisliği** Bölümü "Web Teknolojileri" dersi kapsamında geliştirilmiş kapsamlı bir kişisel web sitesidir. 
+
+Proje, sadece kişisel bilgileri (CV) sunmakla kalmaz, aynı zamanda yaşadığım şehrin (Kocaeli) tarihi ve kültürel miraslarını tanıtan bir rehber niteliği taşır. Responsive (duyarlı) tasarım prensiplerine uygun olarak HTML, CSS ve PHP kullanılarak geliştirilmiştir.
+
+## ✨ Özellikler (Features)
+
+Sitede bulunan ana modüller ve sayfalar şunlardır:
+
+* 🏠 **Anasayfa:** Modern ve kullanıcı dostu bir karşılama ekranı.
+* 🌆 **Şehrim (My City):** Kocaeli'nin tarihi, kültürü ve gezilecek yerlerinin tanıtımı (Hereke, İzmit Saat Kulesi vb.).
+* 📜 **Tarihi Mirasımız (Heritage):** Bölgenin kültürel ve tarihi dokusunu anlatan detaylı içerikler.
+* 👨‍💻 **Özgeçmiş (CV):** Eğitim, yetenekler ve deneyimlerin listelendiği profesyonel profil sayfası.
+* ⚽ **İlgi Alanlarım (Interests):** Hobiler, sevilen filmler ve kişisel ilgi alanları (API entegrasyonu demosu içerir).
+* 🔐 **Giriş Yap (Login):** Kullanıcı doğrulama simülasyonu yapan bir giriş paneli.
+* b **İletişim (Contact):** Ziyaretçilerin mesaj gönderebileceği **PHP tabanlı** çalışan bir iletişim formu.
+
+## 🛠️ Kullanılan Teknolojiler (Tech Stack)
+
+* **Frontend:** HTML5, CSS3 (Custom Styling, Responsive Design)
+* **Backend:** PHP (Form handling & validation)
+* **Tools:** Visual Studio Code, XAMPP/WAMP Server
+
+## 🚀 Kurulum ve Çalıştırma (Installation)
+
+Bu proje PHP dosyaları (`contact.php`) içerdiği için bir yerel sunucuya ihtiyaç duyar.
+
+1.  Bu repoyu bilgisayarınıza indirin (ZIP veya Git ile).
+2.  **XAMPP** veya **WAMP** gibi bir yerel sunucu kurun.
+3.  Proje klasörünü `htdocs` (XAMPP için) veya `www` (WAMP için) klasörünün içine atın.
+4.  Tarayıcınızı açın ve şu adrese gidin:
+    ```
+    http://localhost/web-teknoloj-proje/WEB TEKNOLOJİ PROJE/index.html
+    ```
+
+## 📷 Ekran Görüntüleri (Screenshots)
+
+| Anasayfa | Şehrim Sayfası |
+| :---: | :---: |
+| *[Buraya anasayfa ekran görüntüsü ekleyin]* | *[Buraya şehrim sayfası ekran görüntüsü ekleyin]* |
+
+| Login Paneli | İletişim Formu |
+| :---: | :---: |
+| *[Buraya login.jpg gibi bir görsel ekleyin]* | *[Buraya iletişim sayfası görseli ekleyin]* |
+
+---
+*Developed by Ali Selman Erkan - Computer Engineering Student at Sakarya University (SAÜ)*
