@@ -1,98 +1,58 @@
 # 🌍 My Personal Website & City Guide Project
+
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![Sakarya University](https://img.shields.io/badge/Sakarya_University-Web_Technologies_Project-green?style=for-the-badge)
+![Sakarya University](https://img.shields.io/badge/Sakarya_University-Project-green?style=for-the-badge)
+
+## 📌 Proje Hakkında (About)
+Bu proje, **Sakarya Üniversitesi Bilgisayar Mühendisliği** Bölümü "Web Teknolojileri" dersi kapsamında geliştirilmiş kapsamlı bir kişisel web sitesidir. 
+
+Kocaeli şehrinin (Hereke, Gültepe vb.) tarihi ve kültürel miraslarını tanıtan, aynı zamanda kişisel CV ve ilgi alanlarını barındıran responsive bir web uygulamasıdır.
+
+## ✨ Özellikler ve Ekran Görüntüleri
+
+### 1. Giriş ve Profil (Login & Profile)
+Kullanıcı giriş ekranı ve kişisel tanıtım sayfası.
+
+| Giriş Paneli (Login) | Profil Sayfası |
+| :---: | :---: |
+| <img src="WEB%20TEKNOLOJ%C4%B0%20PROJE/login.jpg" width="400"> | <img src="WEB%20TEKNOLOJ%C4%B0%20PROJE/profil.jpg" width="400"> |
+
+### 2. Şehrim Kocaeli (City Guide)
+Şehrin tarihi dokusu ve gezilecek yerleri.
+
+| İzmit | Hereke |
+| :---: | :---: |
+| <img src="WEB%20TEKNOLOJ%C4%B0%20PROJE/izmit%20ihl.jpeg" width="400"> | <img src="WEB%20TEKNOLOJ%C4%B0%20PROJE/hereke.jpeg" width="400"> |
+
+### 3. Mirasımız ve Kültür (Heritage)
+Bölgenin önemli simgeleri.
+
+| Tarihi Miras | Gültepe |
+| :---: | :---: |
+| <img src="WEB%20TEKNOLOJ%C4%B0%20PROJE/tarihi-ve-kulturel-miras-5b6765a5aeeffd92c95b.jpg" width="400"> | <img src="WEB%20TEKNOLOJ%C4%B0%20PROJE/g%C3%BCltepe.jpg" width="400"> |
 
 ---
 
-## 📌 Proje Hakkında (About the Project)
+## 🛠️ Teknik Detaylar
 
-Bu proje, **Sakarya Üniversitesi Bilgisayar Mühendisliği Bölümü**  
-**Web Teknolojileri** dersi kapsamında geliştirilmiş kapsamlı bir **kişisel web sitesi ve şehir tanıtım uygulamasıdır**.
-4
-Projenin temel amacı;  
-- HTML5, CSS3 ve PHP teknolojilerini kullanarak  
-- Responsive (duyarlı) tasarım prensiplerine uygun  
-- Hem kişisel hem de bilgilendirici bir web uygulaması geliştirmektir.
+* **Frontend:** HTML5, CSS3
+* **Backend:** PHP (İletişim formu ve form işleme)
+* **Sayfa Yapısı:**
+    * `index.html` - Anasayfa
+    * `sehrim.html` - Şehir Tanıtımı
+    * `mirasımız.html` - Kültürel Miras
+    * `ozgecmis.html` - Kişisel CV
+    * `login.html` - Giriş Ekranı
 
-Web sitesi, geliştiricinin kişisel bilgilerini ve özgeçmişini barındırmasının yanı sıra,  
-**Kocaeli şehrinin** (İzmit, Hereke, Gültepe vb.) tarihi, kültürel ve coğrafi özelliklerini tanıtan sayfalardan oluşmaktadır.
+## 🚀 Nasıl Çalıştırılır?
 
-Bu yönüyle proje, **kişisel portföy + şehir rehberi** konseptlerini bir arada sunmaktadır.
+Bu proje PHP içerdiği için (iletişim formu vb.) bir sunucuda çalıştırılmalıdır.
 
----
-
-## 🎯 Projenin Amaçları
-
-- HTML5 etiketlerini semantik yapıya uygun şekilde kullanmak  
-- CSS3 ile modern ve sade bir arayüz tasarlamak  
-- PHP ile temel backend mantığını (form işlemleri vb.) uygulamak  
-- Çok sayfalı web sitesi yapısını doğru şekilde kurgulamak  
-- Kullanıcı deneyimini (UX) ön planda tutmak  
-- Akademik ders gereksinimlerini karşılayan, düzenli ve okunabilir bir proje ortaya koymak  
+1.  Repoyu indirin.
+2.  Dosyaları `XAMPP/htdocs` veya `WAMP/www` klasörüne atın.
+3.  Tarayıcıda: `http://localhost/WEB%20TEKNOLOJ%C4%B0%20PROJE/index.html` adresine gidin.
 
 ---
-
-## 🧩 Proje İçeriği
-
-Web sitesi aşağıdaki ana bölümlerden oluşmaktadır:
-
-### 🔐 Giriş (Login) Sayfası
-- Kullanıcı giriş ekranı
-- Form yapısı ve temel doğrulama mantığı
-
-### 👤 Hakkımda / Profil
-- Kişisel bilgiler
-- İlgi alanları
-- Kısa tanıtım metinleri
-
-### 🏙️ Şehrim – Kocaeli
-- Kocaeli’nin genel tanıtımı
-- Tarihi ve kültürel mekanlar
-- İlçeler hakkında bilgilendirici içerikler
-
-### 🏛️ Kültürel Miras
-- Bölgenin önemli tarihi ve kültürel değerleri
-- Görseller ve açıklamalarla desteklenen içerikler
-
-### 📄 Özgeçmiş (CV)
-- Eğitim bilgileri
-- Teknik yetkinlikler
-- Akademik ve kişisel bilgiler
-
-### 📬 İletişim
-- Kullanıcıdan bilgi alan form yapısı
-- PHP ile form verilerinin işlenmesi
-
----
-
-## 🛠️ Kullanılan Teknolojiler
-
-### Frontend
-- **HTML5**
-  - Semantik etiketler
-  - Sayfa yapısı ve içerik organizasyonu
-- **CSS3**
-  - Responsive tasarım
-  - Sayfa düzeni ve görsel uyum
-
-### Backend
-- **PHP**
-  - Form işlemleri
-  - Temel sunucu tarafı mantığı
-
----
-
-## 📁 Dosya Yapısı
-
-```text
-/
-├── index.html          → Anasayfa
-├── login.html          → Giriş sayfası
-├── ozgecmis.html       → Özgeçmiş (CV)
-├── sehrim.html         → Şehir tanıtımı
-├── mirasimiz.html      → Kültürel miras
-├── iletisim.php        → İletişim formu (PHP)
-├── style.css           → CSS dosyası
-└── README.md           → Proje açıklamaları
+*Developed by Ali Selman Erkan*
